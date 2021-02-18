@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "header header"
+  "section aside"
+  "footer footer";
+  grid-gap: 25px;
+  background-color: orange;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-columns: 100% 100%;
+    grid-template-areas:
+    "header"
+    "section"
+    "aside"
+    "footer";
+    grid-gap: 25px;
+  }
+}
+
+p {
+  color: black;
+  font-size: 17.5px;
+}
+
+header {
+  background-color: yellow;
+  grid-area: header;
+
+}
+
+
+footer {
+  background-color: red;
+  grid-area: footer;
+  text-align: center;
+}
+
+aside {
+  background-color: green;
+  grid-area: aside;
+}
+
+section {
+  background-color: blue;
+  grid-area: section;
+}
+
+img {
+  width: 50%;
+}
